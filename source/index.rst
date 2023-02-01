@@ -1,10 +1,10 @@
-..  Travail de maturité - CSUD template
+..  Travail personel - CSUD template
     sphinx-quickstart on Fri Nov 19 16:13:20 2021.
     You can adapt this file completely to your liking, but it should at least
     contain the root `toctree` directive.
     
 
-Titre de votre travail personnel (changer dans `source/index.rst`)
+Sécurité informatique :injection SQL (changer dans `source/index.rst`)
 =================================
 
 ..  toctree::

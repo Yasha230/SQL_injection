@@ -1,8 +1,8 @@
 class DocumentInfos:
 
-    title = u'Titre de votre travail personnel (modifier dans `source/infos.py`)'
-    first_name = 'Prénom (infos.py)'
-    last_name = 'Nom de famille (infos.py)'
+    title = u'Sécurité informatique :injection SQL'
+    first_name = 'Carmen'
+    last_name = 'Balta'
     author = f'{first_name} {last_name}'
     year = u'2023'
     month = u'Janvier'
