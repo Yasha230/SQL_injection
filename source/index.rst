@@ -12,6 +12,10 @@ Sécurité informatique :injection SQL (changer dans `source/index.rst`)
     :caption: Table des matières
 
     introduction.rst
+    chapitre-01_SQL-en-cybersécurité.md
+    chapitre-02_types-attaques.md
+    chapitre-03_Demo.md
+    chapitre-04_Protection.md
     conclusion.rst
     references.rst
 
