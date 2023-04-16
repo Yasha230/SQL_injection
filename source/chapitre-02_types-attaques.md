@@ -8,7 +8,8 @@ Les injections SQL sont une technique de priatage informatique qui exploite les 
 
 ```
 
-1. Injection SQL Union
+1. **Injection SQL Union**
+
 Ce type d'injection SQL consiste à ajouter une requête SQL supplémentaire à une requête existante en utilisant l'opérateur "UNION". La requête supplémentaire est utilisée pour extraire des données d'autres tables de la base de données. Par exemple, supposons que la page de connexion d'un site web utilise la requête suivante pour authentifier les utilisateurs :
 
 ```{code-block} SQL
@@ -27,7 +28,7 @@ La requête résultante serait la suivante :
 SELECT * FROM users WHERE username = '' UNION SELECT product_name, product_description, price FROM products --' AND password = '';
 ```
 
-2. Injection SQL error-based (par injection SQL in-band)
+2. **Injection SQL error-based (par injection SQL in-band)**
 
 Ce type d'injection SQL consiste à exploiter des erreurs SQL pour extraire des données de la base de données. Par exemple, un attaquant peut saisir une instruction SQL contenant une erreur intentionnelle, telle que :
 
@@ -37,7 +38,8 @@ Ce type d'injection SQL consiste à exploiter des erreurs SQL pour extraire des 
 
 Si l'application ne valide pas correctement les données saisies par l'utilisateur, la requête risque d'échouer et de supprimer l'intégralité de la table "users". L'attaquant peut également utiliser le message d'erreur pour extraire des informations sensibles de la base de données.
 
-3. Injection SQL blind time-based
+3. **Injection SQL blind time-based**
+
 Ce type d'injection SQL consiste à envoyer des requêtes à la base de données et à mesurer le temps de réponse. Le hacker peut alors déduire des informations sur la base de données en se basant sur le temps de réponse. Par exemple, un pirate peut injecter une requête retardée comme celle-ci :
 
 ```{code-block} SQL
@@ -46,7 +48,8 @@ Ce type d'injection SQL consiste à envoyer des requêtes à la base de données
 
 Si l'application met plus de temps que d'habitude à répondre, cela peut indiquer que la base de données est vulnérable à l'injection SQL.
 
-4. Injection SQL blind boolean-based
+4. **Injection SQL blind boolean-based**
+
 Ce type d'injection SQL consiste à envoyer des requêtes à la base de données et à déduire des informations selon que la réponse est vraie ou fausse. Par exemple, un pirate peut injecter une requête qui vérifie si une condition particulière est vraie ou fausse :
 
 ```{code-block} SQL
@@ -55,7 +58,8 @@ Ce type d'injection SQL consiste à envoyer des requêtes à la base de données
 
 Si l'application répond par un message indiquant que la condition est vraie, l'attaquant peut en déduire que le mot de passe de l'administrateur commence par la lettre "a".
 
-5. Injection SQL out-of-band
+5. **Injection SQL out-of-band**
+
 Ce type d'injection SQL implique l'utilisation d'un canal distinct pour communiquer avec la base de données, tel qu'un serveur de courrier électronique ou un serveur DNS. Par exemple, un pirate peut injecter une requête qui déclenche une recherche DNS :
 
 ```{code-block} SQL

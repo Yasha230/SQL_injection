@@ -9,17 +9,3 @@ L'une de ces technologies est SQL, qui est largement utilisé dans les applicati
 Ce projet vise à éduquer et à susciter une certaine prudence quant à l'importance de SQL dans la cybersécurité et aux différentes attaques qui peuvent se produire en raison de sa vulnérabilité.
 
 
-
-..
-    Ceci est un commentaire
-
-Écrivez votre introduction. L'introduction doit contenir les éléments suivants
-
-- évoquer le but du projet (motivation personnelle)
-- évoquer les notions scientifiques / techiques utilisées dans le projet
-- Motivation
-
-  - S'il s'agit d'un sujet théorique, évoquer l'intérêt / l'importance du sujet
-  - S'il s'agit d'un projet pratique (programmation / etc ...), indiquer ce que
-    votre projet apporte, ce qu'il permet de faire.
-
