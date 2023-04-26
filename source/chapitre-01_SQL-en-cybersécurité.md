@@ -1,5 +1,7 @@
 # Le rôle de SQL en cybersécurité
 
+## Le SQL
+
 Le SQL est un langage de communication avec les bases de données (uniquement), sous forme de requête structurés. Ce language est utile pour différents domaines tels que les affaires, le marketing ou les ventes. La pluspart des entreprises ont maintenant une présence en ligne et nécésitent de base de données plus ou moins conséquentes. La façon dont les commandes SQL sont écrites varie légèrement d’une entreprise à l’autre, mais à un degré minime.
 Se sont notamment ses bases de données là qui sont victimes d’attaques par injection SQL. Celles-ci permettent aux attaquants d’usurper certaines identités, d’altérer des données existantes, provoquer des problèmess de répudiation tels que l’annulation de transactions ou la modification de soldes, permettre la diffusion complète de toutes les données du système, ou au contraire les détruire ou les rendre indisponibles.
 
