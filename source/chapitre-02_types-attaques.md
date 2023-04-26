@@ -4,10 +4,6 @@ Les injections SQL sont une technique de priatage informatique qui exploite les 
 
 ## Types d'attaques
 
-```{code-block} SQL
-
-```
-
 1. **Injection SQL Union**
 
 Ce type d'injection SQL consiste à ajouter une requête SQL supplémentaire à une requête existante en utilisant l'opérateur "UNION". La requête supplémentaire est utilisée pour extraire des données d'autres tables de la base de données. Par exemple, supposons que la page de connexion d'un site web utilise la requête suivante pour authentifier les utilisateurs :
