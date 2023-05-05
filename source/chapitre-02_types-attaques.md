@@ -71,5 +71,5 @@ Les attaques par injection SQL peuvent potentiellement toucher tout site web qui
 
 ## Conséquences
 
-    --> + examples (real past situations) 
+Un exemple concret d'attaque est celle de l'entreprise "TalkTalk". "TalkTalk Telecom Group plc" est une société qui fournit des services de télévision payante et d'accès à Internet aux entreprises et aux particuliers au Royaume-Uni. Dans un article de mai 2019, la BBC explique que après le piratage de données de 2015 (par injection SQL), environ 5'000 clients n'avaient pas été informé du vol de leurs données personnelles, y compris des coordonnées bancaires. Ces information ont ensuite été retrouvé en ligne quelques années plus tard.  
 
