@@ -19,11 +19,3 @@ INSERT INTO users (username, password) VALUES ('John O\'Connor', 'password123')
 ```
 Dans cet exemple, le guillemet simple dans le nom d'utilisateur est échappé en utilisant une barre oblique inversée () pour qu'il soit interprété littéralement plutôt que comme une fin de chaîne de caractères.
 
-
-
-Up to now → procedural programming (simply applying code and inserting information into a database) 
-
-	Escape the code → only see as text 
- [  mysqli_real_escape_string( “link parameter”, “input”)  ]
- 
-	Never insert a text (input) directly into a database, as It could be code
