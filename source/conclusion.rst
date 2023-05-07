@@ -3,23 +3,36 @@
 Conclusion
 ##########
 
-La programmation dynamique étant un mode de pensée, une sorte de motif de
-conception d'algorithme, ce travail avait pour but de présenter ses rouages
-plutôt que de présenter le fonctionnement d'algorithmes prêts à l'emploi. Ce
-travail met donc l'accent sur le raisonnement et le processus permettant de
-développer un algorithme de programmation dynamique de A à Z. 
+En conclusion, les injections SQL 
+continuent de représenter une menace 
+importante pour les entreprises qui 
+utilisent des bases de données pour 
+stocker des informations sensibles. 
+SQL est un langage de programmation
+largement utilisé qui permet aux 
+applications d'interagir avec les
+bases de données et d'effectuer 
+différentes opérations, telles que 
+l'insertion, la mise à jour et la 
+récupération de données. Cependant, les mêmes fonctionnalités qui rendent SQL puissant et flexible le rendent également vulnérable aux attaques des pirates cherchant à voler ou à manipuler des données.
 
-Pour prétendre maîtriser la programmation dynamique, il faut cependant avoir
-développé des algorithmes pour plusieurs problèmes assez différents. L'ouvrage
-:cite:p:`cormen01introduction` regorge par exemple d'exemples divers et variés
-ainsi que d'exercices pour se faire la main. Il existe également de nombreux
-ouvrages ou sites Web répertoriant les problèmes de programmation dynamique
-fréquemment demandés en entretien d'embauche au poste d'ingénieur dans le
-domaine du développement. 
-
-J'aurais voulu avoir plus de temps pour approfondir la réflexion didactique dans
-l'optique de traiter ce sujet au cours d'option complémentaire informatique au
-Gymnase. La démarche présentée dans ce travail constitue quoi qu'il en soit une
-bonne base à cet effet. Ce sujet me semble clairement dépasser les attentes et
-les compétences attendues dans le cours de base mais, bien amené, il peut
-convenir pour l'option complémentaire informatique.
+Pour atténuer les risques d'injections
+SQL, les entreprises doivent rester 
+vigilantes et adopter une approche 
+proactive en matière de sécurité. 
+Cela implique la mise en place de
+pratiques de codage sécurisées, 
+telles que l'évitement des requêtes
+SQL dynamiques, la validation des 
+données d'entrée et la limitation 
+des privilèges des utilisateurs. 
+Cela implique également de rester 
+à jour sur les dernières menaces 
+et vulnérabilités de sécurité, et 
+de prendre des mesures rapides pour 
+remédier à tout problème qui se présente.
+En adoptant une approche de sécurité
+multicouche et holistique, les 
+entreprises peuvent aider à se 
+protéger elles-mêmes et leurs 
+clients contre les effets néfastes des injections SQL et d'autres cyberattaques.
