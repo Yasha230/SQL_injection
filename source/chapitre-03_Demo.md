@@ -36,6 +36,13 @@ https://insecure-website.com/products?catergory='Gifts'--
 ```
 Cette petite modification de l'URL entraîne aussi une modification de la requête SQL.
 
+```{code-block} SQL
+SELECT * FROM products
+WHERE category = ‘Gifts’--'
+AND released = 1
+```
+Le double tiret "--" indique que le reste de la requête n'est qu'un commentaire et n'est donc pas pris en compte. Cela supprime en effet la restriction qui bloquait au départ l'accès aux éléments non publiés.
+
 
 # Démonstration artificielle
 
