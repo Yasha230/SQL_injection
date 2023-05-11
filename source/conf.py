@@ -83,8 +83,7 @@ html_theme = "sphinx_book_theme"
 html_static_path = ["_static"]
 
 html_title = infos.title
-html_logo = "logo.png"
-html_favicon = "favicon.png"
+
 
 html_theme_options = {
     "home_page_in_toc": True,
