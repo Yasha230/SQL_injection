@@ -8,19 +8,19 @@ Les injections SQL sont une technique de priatage informatique qui exploite les 
 
 Ce type d'injection SQL consiste à ajouter une requête SQL supplémentaire à une requête existante en utilisant l'opérateur "UNION". La requête supplémentaire est utilisée pour extraire des données d'autres tables de la base de données. Par exemple, supposons que la page de connexion d'un site web utilise la requête suivante pour authentifier les utilisateurs :
 
-```{code-block} SQL
+```{code-block}
 SELECT * FROM users WHERE username = '$username' AND password = '$password';
 ```
 
 Un attaquant peut injecter une requête union pour récupérer des données d'une autre table de la base de données, telle que la table "products" :
 
-```{code-block} SQL
+```{code-block}
 ' UNION SELECT product_name, product_description, price FROM products --
 ```
 
 La requête résultante serait la suivante :
 
-```{code-block} SQL
+```{code-block}
 SELECT * FROM users WHERE username = '' UNION SELECT product_name, product_description, price FROM products --' AND password = '';
 ```
 
@@ -28,7 +28,7 @@ SELECT * FROM users WHERE username = '' UNION SELECT product_name, product_descr
 
 Ce type d'injection SQL consiste à exploiter des erreurs SQL pour extraire des données de la base de données. Par exemple, un attaquant peut saisir une instruction SQL contenant une erreur intentionnelle, telle que :
 
-```{code-block} SQL
+```{code-block}
 ' OR 1=1; DROP TABLE users; --
 ```
 
@@ -38,7 +38,7 @@ Si l'application ne valide pas correctement les données saisies par l'utilisate
 
 Ce type d'injection SQL consiste à envoyer des requêtes à la base de données et à mesurer le temps de réponse. Le hacker peut alors déduire des informations sur la base de données en se basant sur le temps de réponse. Par exemple, un pirate peut injecter une requête retardée comme celle-ci :
 
-```{code-block} SQL
+```{code-block}
 ' AND SLEEP(10) --
 ```
 
@@ -48,7 +48,7 @@ Si l'application met plus de temps que d'habitude à répondre, cela peut indiqu
 
 Ce type d'injection SQL consiste à envoyer des requêtes à la base de données et à déduire des informations selon que la réponse est vraie ou fausse. Par exemple, un pirate peut injecter une requête qui vérifie si une condition particulière est vraie ou fausse :
 
-```{code-block} SQL
+```{code-block}
 ' AND (SELECT COUNT(*) FROM users WHERE username = 'admin' AND SUBSTRING(password, 1, 1) = 'a') > 0 --
 ```
 
@@ -58,7 +58,7 @@ Si l'application répond par un message indiquant que la condition est vraie, l'
 
 Ce type d'injection SQL implique l'utilisation d'un canal distinct pour communiquer avec la base de données, tel qu'un serveur de courrier électronique ou un serveur DNS. Par exemple, un pirate peut injecter une requête qui déclenche une recherche DNS :
 
-```{code-block} SQL
+```{code-block}
 ' UNION SELECT username, password, email FROM users WHERE username = 'admin'; SELECT * FROM (SELECT pg_sleep(10))a --
 ```
 

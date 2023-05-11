@@ -37,7 +37,7 @@ https://insecure-website.com/products?catergory='Gifts'--
 ```
 Cette petite modification de l'URL entraîne aussi une modification de la requête SQL.
 
-```{code-block} SQL
+```{code-block}
 SELECT * FROM products
 WHERE category = ‘Gifts’--'
 AND released = 1
@@ -52,7 +52,7 @@ https://insecure-website.com/products?catergory='Gifts'+OR+1=1--
 ```
 Il s'agit d'une méthode de type UNION dans laquelle l'attaquant ajoute une ligne de code à la requête pour accéder aux informations souhaitées de la base de données, résultant dans la requête suivante:
 
-```{code-block} SQL
+```{code-block}
 SELECT * FROM products
 WHERE category = ‘Gifts’
 OR 1=1--'AND released = 1
