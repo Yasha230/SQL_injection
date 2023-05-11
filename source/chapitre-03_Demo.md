@@ -8,7 +8,7 @@ https://insecure-website.com/products?catergory=Gifts
 
 Cela implique que l'application doit effectuer une requête SQL pour extraire la liste des produits concernés de la base de donnée.
 
-```{code-block} SQL
+```{code-block}
 SELECT * FROM products
 WHERE category = ‘Gifts’
 AND released = 1
